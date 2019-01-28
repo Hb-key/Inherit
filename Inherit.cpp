@@ -7,10 +7,6 @@ public:
 	{
 		cout << "Base::fun1()" << endl;
 	}
-	virtual void fun2()
-	{
-		cout << "Base::fun2()" << endl;
-	}
 };
 
 class Derived :public Base {
@@ -18,20 +14,15 @@ class Derived :public Base {
 	{
 		cout << "Derived::fun1()" << endl;
 	}
-	virtual void fun3()
-	{
-		cout << "Derived::fun3()" << endl;
-	}
 };
 
 int main()
 {
-	Base b;
+	Base b, *p;
 	Derived d;
-	b.fun1();
-	b.fun2();
-	d.
-	d.fun1();
-	d.fun2();
+	p = &b;
+	p->fun1();
+	p = &d;
+	p->fun1();
 	return 0;
 }
