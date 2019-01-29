@@ -10,7 +10,7 @@ public:
 };
 
 class Derived :public Base {
-	virtual void fun1()
+	virtual  void  fun1（）
 	{
 		cout << "Derived::fun1()" << endl;
 	}
