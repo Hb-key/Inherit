@@ -52,4 +52,45 @@ using namespace std;
 //	delete p1;   
 //	return 0;
 //}
+#include<string>
 
+#if 0
+int main()
+{
+	//string s("hello");
+	//cout << s.capacity() << endl;
+
+	//cout << s.resize(30) << endl;
+
+	//cout << sizeof(string) << endl;
+
+	/*string name("Smith");
+	string family("John");
+
+	name += "K.";
+	name += family;
+	name += '\n';
+
+	cout << name;*/
+	//截取文件名
+	string File("123.txt");
+	int begin = File.rfind('.');
+	int end = File.rfind('\\');
+	string strSuffix = File.substr(end+1,begin-end-1);
+	cout << strSuffix << endl;
+
+	return 0;
+}
+
+#endif
+
+int main()
+{
+	//截取域名
+	string url("http://www.cplusplus.com/reference/string/string/?kw=string");
+	size_t begin = url.find("://") + 3;
+	size_t end = url.find('/', begin);
+
+	cout << url.substr(begin, end - begin) << '\n';
+	return 0;
+}
