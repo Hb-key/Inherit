@@ -72,7 +72,7 @@ int main()
 	name += '\n';
 
 	cout << name;*/
-	//截取文件名
+	//陆脴脠隆脦脛录镁脙没
 	string File("123.txt");
 	int begin = File.rfind('.');
 	int end = File.rfind('\\');
@@ -86,11 +86,11 @@ int main()
 
 int main()
 {
-	//截取域名
+	//陆脴脠隆脫貌脙没
 	string url("http://www.cplusplus.com/reference/string/string/?kw=string");
 	size_t begin = url.find("://") + 3;
 	size_t end = url.find('/', begin);
 
-	cout << url.substr(begin, end - begin) << '\n';
+	cout << url.substr(begin, end - begin) << endl;
 	return 0;
 }
